@@ -71,12 +71,13 @@ function CustomAwardForm({ deserializeFunder, selectedFunding }) {
         label={i18next.t("Funder")}
         noQueryMessage={i18next.t("Search for funder...")}
         clearable
-        allowAdditions={true}
+        allowAdditions
         multiple={false}
         selectOnBlur={false}
         selectOnNavigation={false}
         required
         search={(options) => options}
+        isFocused
         onValueChange={({ formikProps }, selectedFundersArray) => {
           if (selectedFundersArray.length === 1) {
             const selectedFunder = selectedFundersArray[0];
