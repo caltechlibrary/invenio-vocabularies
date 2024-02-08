@@ -71,7 +71,7 @@ function CustomAwardForm({ deserializeFunder, selectedFunding }) {
         label={i18next.t("Funder")}
         noQueryMessage={i18next.t("Search for funder...")}
         clearable
-        allowAdditions={false}
+        allowAdditions={true}
         multiple={false}
         selectOnBlur={false}
         selectOnNavigation={false}
